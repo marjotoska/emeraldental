@@ -6,6 +6,10 @@
   display: flex;
 }
 
+.flexbox-pos {
+  display: inline;
+}
+
 .bold {
   color: #000;
   font-size: 20px;
@@ -43,5 +47,13 @@
   }
   .align-left {
     text-align: left;
+  }
+
+  .fa-instagram {
+    /* left: 95%; */
+    position: relative;
+    text-align: center;
+    justify-self: center;
+    /* right: 25%; */
   }
 } ;
