@@ -1,0 +1,104 @@
+/* video widget fix */
+body .so-widget-orion_responsive_video_w  {
+	display: block;
+}
+.sow-icon-fontawesome[data-sow-icon]:before {
+    font-family: inherit!important;
+}
+
+
+
+/* Custom carousel fix 6/6/2019 */
+@media (min-width: 768px) {
+  .so-widget-orion_custom_carousel_w .item {
+    display: table;
+    vertical-align: middle; }
+    .so-widget-orion_custom_carousel_w .item > .image {
+      display: table-cell;
+      vertical-align: middle;
+      width: 50%;
+      position: relative; }
+      .so-widget-orion_custom_carousel_w .item > .image > .absolute {
+        background-size: cover;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-position-x: 50%; }
+      .so-widget-orion_custom_carousel_w .item > .image img {
+        visibility: hidden; }
+    .so-widget-orion_custom_carousel_w .item > .content {
+      display: table-cell;
+      vertical-align: middle;
+      width: 50%;
+      padding: 60px; } }
+
+@media (max-width: 767px) {
+  .so-widget-orion_custom_carousel_w .item > .image {
+    width: 100%; }
+  .so-widget-orion_custom_carousel_w .item > .content {
+    padding: 30px; } }
+
+.so-widget-orion_custom_carousel_w .item {
+  -webkit-backface-visibility: visible;
+  transform-style: flat; }
+  .so-widget-orion_custom_carousel_w .item.text-dark {
+    background-color: #fff; }
+
+
+/* Revolution slider 6 fix 11.7.2019 */
+.push-up-row, .row-divide, .push-up-120, .push-up-60 {
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  .header-with-widgets.site-header .burger-container .to-x {
+      z-index: 2;
+  }
+}
+
+/* advanced tabs fix 1.8.2019 */
+
+
+.so-widget-orion_advanced_carousel_w .nav-wrap {
+  min-height: 50px;
+  margin-bottom:24px;
+}
+.so-widget-orion_advanced_carousel_w .nav-wrap > ul{
+  margin-bottom:0;
+}
+
+.so-widget-orion_advanced_carousel_w .nav-wrap + .advanced-carousel-wrap {
+  margin-top: -7px;
+}
+
+.advanced-carousel-wrap {
+  position: relative;
+}
+
+.advanced-carousel-wrap .item {
+  margin-bottom: 0;
+}
+
+.advanced-carousel-wrap .siteorigin-panels-stretch {
+  margin-left: 0!important;
+  margin-right: 0!important;
+  padding-left: 0!important;
+  padding-right: 0!important; 
+}
+
+.arrows-aside {
+  pointer-events: none;
+}
+.arrows-aside.btn {
+  pointer-events: all;
+}
+
+
+/* 18.9.2019 circle greyscale chrome bug */
+
+.circle-wrap {
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
