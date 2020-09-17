@@ -1,0 +1,9 @@
+create a composer.json file (copy&paste this):
+{
+  "require": {
+    "phpmailer/phpmailer": "~5.2"
+  }
+}
+
+run this command in terminal (Ctrl+~ in VScode):
+composer install
