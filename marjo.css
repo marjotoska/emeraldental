@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Nimbus Heavy";
+  src: url("./Font/urw_-_nimbussannov-lig-sembol.woff2");
+}
+
+.nimbus-heavy {
+  font-family: "Nimbus Heavy";
+  font-weight: 900;
+}
+
 #pgc-1000-1-1 {
   margin: 40px 0px;
 }
