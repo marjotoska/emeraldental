@@ -33,7 +33,7 @@
 	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
-			"@type": "Dentist",
+			"@type": "Dentistry",
 			"@id": "https://www.emeraldental.com",
 			"name": "Dental Tourism in Albania | Emerald Dental Clinic",
 			"description": "We make sure your dental tourism experience is perfect,
@@ -61,33 +61,61 @@
 			"aggregateRating": {
 				"@type": "AggregateRating",
 				"ratingValue": 5.0,
-				"reviewCount": 29
+				"reviewCount": 1
 			},
 			"image": "https://www.emeraldental.com/Images/Dental%20Implant%20Procedure.webp",
-			"review": [
-				{
-					"@type": "Review",
-					"author": "Marjo Toska",
-					"datePublished": "2020-09-21",
-					"description": "Great prices, excellent service, my fillings and dental cleaning didn't hurt a bit!",
-					"name": "Totally Satisfied",
-					"reviewRating": {
-						"@type": "Rating",
-						"ratingValue": 5
-					}
-				},
-				{
-					"@type": "Review",
-					"author": "Jay Doshi",
-					"datePublished": "2020-10-01",
-					"description": "I came from UK and was not expecting such quality and fast service, I highly reccomend this clinic.",
-					"name": "Amazing Service",
-					"reviewRating": {
-						"@type": "Rating",
-						"ratingValue": 5
-					}
-				}
-			]
+			
+			"@graph": [
+			{
+			  "@type": "Dentistry",
+			  "@id": "https://emeraldental.com/#dentistry",
+			  "name": "Dental Tourism in Albania | Emerald Dental Clinic",
+			  "url": "https://emeraldental.com/",
+			  "sameAs": [],
+			  "logo": {
+				"@type": "ImageObject",
+				"@id": "https://emeraldental.com/#implant-procedure-in-albania",
+				"url": "https://www.emeraldental.com/Images/Dental%20Implant%20Procedure.webp",
+				"width": 650,
+				"height": 650,
+				"caption": "Dental Tourism in Albania | Emerald Dental Clinic"
+			  },
+			  "image": { "@id": "https://emeraldental.com/#logo" }
+			},
+			{
+			  "@type": "WebSite",
+			  "@id": "https://emeraldental.com/#website",
+			  "url": "https://emeraldental.com/",
+			  "name": "Dental Tourism in Albania | Emerald Dental Clinic",
+			  "description": "The quality of our work is excellent while keeping the the prices affordable. Our clinic possesses certifications that comply to EU Standards.",
+			  "publisher": { "@id": "https://emeraldental.com/#dentistry" },
+			  "potentialAction": {
+				"@type": "SearchAction",
+				"target": "https://emeraldental.com/?s={search_term_string}",
+				"query-input": "required name=search_term_string"
+			  }
+			},
+			{
+			  "@type": "ImageObject",
+			  "@id": "https://emeraldental.com/#implant-procedure-in-albania",
+			  "url": "https://www.emeraldental.com/Images/Dental%20Implant%20Procedure.webp",
+			  "width": 800,
+			  "height": 450
+			},
+			{
+			  "@type": "WebPage",
+			  "@id": "https://emeraldental.com/#webpage",
+			  "url": "https://emeraldental.com/",
+			  "inLanguage": "en-US",
+			  "name": "Dental Tourism in Albania | Emerald Dental Clinic",
+			  "isPartOf": { "@id": "https://emeraldental.com/#website" },
+			  "primaryImageOfPage": {
+				"@id": "https://www.emeraldental.com/Images/Dental%20Implant%20Procedure.webp"
+			  },
+			  "datePublished": "2019-10-05T08:44:06+00:00",
+			  "dateModified": "2020-10-03T15:00:01+00:00"
+			}
+		  ]
 		}
 	</script>
 	<!-- Schema.org JSON-LD END  -->
